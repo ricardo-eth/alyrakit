@@ -1,6 +1,6 @@
 const GetStarted = () => {
   return (
-    <div>
+    <section id="buy-now">
       <span>Get Started</span>
       <h2>Get AlyraKit and save your time</h2>
       <p>
@@ -9,7 +9,7 @@ const GetStarted = () => {
         control.
       </p>
       <button>Buy now</button>
-    </div>
+    </section>
   )
 }
 

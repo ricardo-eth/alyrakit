@@ -23,7 +23,7 @@ const Pricing = () => {
   }
 
   return (
-    <div>
+    <section id="pricing">
       <h2>Fair, simple pricing for all</h2>
 
       <p>
@@ -54,7 +54,7 @@ const Pricing = () => {
           <button>Contact us</button>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

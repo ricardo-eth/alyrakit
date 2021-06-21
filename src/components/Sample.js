@@ -2,7 +2,7 @@ import Form from "./Form"
 
 const Sample = () => {
   return (
-    <div>
+    <div id="sample">
       <p>
         Using AlyraKit to build your site means never worrying about designing
         another page or cross browser compatibility. Our ever-growing library of
