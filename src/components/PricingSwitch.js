@@ -1,4 +1,4 @@
-import { Switch, Text, FormControl, FormLabel } from "@chakra-ui/react"
+import { Switch, Text, FormControl, FormLabel } from "@chakra-ui/react";
 
 const PricingSwitch = ({ onChange }) => {
   return (
@@ -17,7 +17,7 @@ const PricingSwitch = ({ onChange }) => {
       </FormLabel>
       <Switch id="pricing-option" onChange={onChange} colorScheme="teal" />
     </FormControl>
-  )
-}
+  );
+};
 
-export default PricingSwitch
+export default PricingSwitch;

@@ -1,8 +1,9 @@
-import docs from "../assets/docs.svg";
-import coffee from "../assets/coffee.svg";
-import screen from "../assets/screen.svg";
-import Feature from "./Feature";
-import { Container, SimpleGrid } from "@chakra-ui/react";
+import docs from "../assets/docs.svg"
+import coffee from "../assets/coffee.svg"
+import screen from "../assets/screen.svg"
+import Feature from "./Feature"
+import { Container, SimpleGrid } from "@chakra-ui/react"
+import SlideFadeOnScroll from "./SlideFadeOnScroll"
 
 const Features = () => {
   const features = [
@@ -21,16 +22,18 @@ const Features = () => {
       title: "Documentation for everything",
       text: "We've written extensive documentation for components and tools, so you never have to reverse engineer anything.",
     },
-  ];
+  ]
   return (
     <Container as="section" maxW="container.lg" py="10">
-      <SimpleGrid columns={[2]} gap="8">
-        {features.map((el, index) => {
-          return <Feature key={index} {...el}></Feature>;
-        })}
-      </SimpleGrid>
+      <SlideFadeOnScroll>
+        <SimpleGrid columns={[1, null, 3]} gap="8">
+          {features.map((el, index) => {
+            return <Feature key={index} {...el}></Feature>
+          })}
+        </SimpleGrid>
+      </SlideFadeOnScroll>
     </Container>
-  );
-};
+  )
+}
 
-export default Features;
+export default Features

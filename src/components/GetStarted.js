@@ -1,41 +1,42 @@
 import {
   Box,
   Badge,
-  Button,
   Heading,
   Text,
+  Button,
   Container,
-  Center,
+  LightMode,
 } from "@chakra-ui/react";
-
+import SlideFadeOnScroll from "./SlideFadeOnScroll";
 const GetStarted = () => {
   return (
-    <Box color="white" bg="teal.800">
-      <Container as="section" maxW="container.lg" py="20">
-        <Center mb="6">
-          <Badge
-            fontSize="m"
-            color="white"
-            bg="whiteAlpha.300"
-            p="2"
-            borderRadius="50"
-          >
-            Get Started
-          </Badge>
-        </Center>
-        <Heading textAlign="center">Get AlyraKit and save your time</Heading>
-        <Text textAlign="center" my="6">
-          Stop wasting time trying to do it the "right way" and build a site
-          from scratch. AlyraKit is faster, easier, and you still have complete
-          control.
-        </Text>
-        <Center>
-          <Button size="lg" colorScheme="teal">
-            Buy now
-          </Button>
-        </Center>
-      </Container>
-    </Box>
+    <LightMode>
+      <Box
+        as="section"
+        textAlign="center"
+        bg="teal.900"
+        py="20"
+        color="white"
+        id="buy-now"
+      >
+        <Container maxWidth="container.md">
+          <SlideFadeOnScroll>
+            <Badge colorScheme="whiteAlpha">Get Started</Badge>
+            <Heading mb="6" fontFamily="special">
+              Get AlyraKit and save your time
+            </Heading>
+            <Text fontSize="lg" mb="6">
+              Stop wasting time trying to do it the "right way" and build a site
+              from scratch. AlyraKit is faster, easier, and you still have
+              complete control.
+            </Text>
+            <Button colorScheme="teal" size="lg">
+              Buy now
+            </Button>
+          </SlideFadeOnScroll>
+        </Container>
+      </Box>
+    </LightMode>
   );
 };
 
